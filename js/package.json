@@ -1,18 +1,49 @@
 {
   "name": "fahali",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Market intelligence AI agents can verify - signed receipts, judged track record (misses included), Brier-calibrated forecasts. Zero-dep client + tools for OpenAI, Vercel AI SDK, LangChain, AutoGen. MCP: mcp.fahaliai.com",
-  "keywords": ["ai-agents", "mcp", "market-intelligence", "trading", "langchain", "vercel-ai-sdk", "openai", "function-calling", "crypto", "risk"],
+  "keywords": [
+    "ai-agents",
+    "mcp",
+    "market-intelligence",
+    "trading",
+    "langchain",
+    "vercel-ai-sdk",
+    "openai",
+    "function-calling",
+    "crypto",
+    "risk"
+  ],
   "homepage": "https://fahaliai.com/developer",
-  "repository": { "type": "git", "url": "https://github.com/BobMain-2025/fahali-integrations" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Future-Legends-Inc/fahali-integrations"
+  },
   "license": "MIT",
   "author": "Future Legends AI <robert@futurelegendsai.com>",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
-  "files": ["dist", "README.md"],
-  "scripts": { "build": "tsc -p tsconfig.json" },
-  "devDependencies": { "typescript": "^5.5.0" },
-  "engines": { "node": ">=18" }
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "bugs": {
+    "url": "https://github.com/Future-Legends-Inc/fahali-integrations/issues"
+  }
 }

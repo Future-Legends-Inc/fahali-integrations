@@ -15,7 +15,7 @@ import urllib.request
 import urllib.error
 from typing import Any, Optional
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 DEFAULT_BASE_URL = "https://app.fahaliai.com"
 
 

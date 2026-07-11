@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "fahali"
-version = "0.1.0"
+version = "0.1.1"
 description = "Market intelligence AI agents can verify - signed receipts, judged track record (misses included), Brier-calibrated forecasts. Adapters for LangChain, CrewAI, LlamaIndex, AutoGen, smolagents. MCP: mcp.fahaliai.com"
 readme = "README.md"
 license = "MIT"
@@ -21,4 +21,4 @@ classifiers = [
 [project.urls]
 Homepage = "https://fahaliai.com/developer"
 Documentation = "https://fahaliai.com/developer"
-Repository = "https://github.com/BobMain-2025/fahali-integrations"
+Repository = "https://github.com/Future-Legends-Inc/fahali-integrations"
