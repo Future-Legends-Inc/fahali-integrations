@@ -88,6 +88,23 @@ const tools = toAiSdkTools(fahali);
 const lcTools = toLangchainTools(fahali);
 ```
 
+## Examples
+
+Runnable, verified against the live API — [`examples/`](examples):
+
+| Example | Key? | Shows |
+|---|---|---|
+| [`quickstart/`](examples/quickstart) | **No** | The verified lead-time record in ~10 seconds |
+| [`pre-trade-risk-gate/`](examples/pre-trade-risk-gate) | free | Check risk *before* opening a position |
+| [`openai-agents/`](examples/openai-agents) | free | OpenAI function calling (AutoGen, smolagents too) |
+| [`langchain/`](examples/langchain) | free | LangChain / LangGraph tools |
+| [`crewai/`](examples/crewai) | free | CrewAI risk-analyst agent |
+| [`vercel-ai-sdk/`](examples/vercel-ai-sdk) | free | TypeScript tool calling |
+
+```bash
+python examples/quickstart/no_key_demo.py   # no signup, real output
+```
+
 ## Why an agent uses Fahali instead of a price feed
 
 - **Verified lead time** — per engine, the median hours ahead of the move on its
