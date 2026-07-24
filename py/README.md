@@ -88,10 +88,10 @@ const tools = toLangchainTools(fahali, { DynamicStructuredTool });
 |---|---|
 | `fahali_verdict` | 18-engine committee read: agreement, dissent on the record, signed receipt, replay URL |
 | `fahali_forecast_72h` | Crash/neutral/pump distribution, Brier-calibrated |
-| `fahali_tape` | Latest judged calls market-wide — hits **and misses** |
+| `fahali_tape` | Latest judged calls market-wide: hits **and misses** |
 | `fahali_symbol_record` | Per-symbol judged record with replay URLs |
 | `fahali_track_record` | Aggregate scorecard: lift vs base rate, sample sizes, disclosed gaps |
-| `fahali_recent_alerts` | Live detections across ~600 scanned instruments |
+| `fahali_recent_alerts` | Live detections across covered crypto and US equities |
 
 ## Why this instead of a terminal or search
 

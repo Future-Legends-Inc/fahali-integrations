@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "fahali"
-version = "0.1.1"
+version = "0.1.2"
 description = "Market intelligence AI agents can verify - signed receipts, judged track record (misses included), Brier-calibrated forecasts. Adapters for LangChain, CrewAI, LlamaIndex, AutoGen, smolagents. MCP: mcp.fahaliai.com"
 readme = "README.md"
 license = "MIT"

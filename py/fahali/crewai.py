@@ -10,7 +10,7 @@ def get_crewai_tools(client: FahaliClient) -> list:
 
     @tool("fahali_verdict")
     def fahali_verdict(symbols: str) -> str:
-        """Committee market verdict for comma-separated symbols (e.g. 'BTCUSDT,ETHUSDT'). 18 engines vote; includes agreement, dissent on the record, a signed receipt and a public replay URL. Observation, not advice."""
+        """Committee market verdict for comma-separated symbols (e.g. 'BTCUSDT,ETHUSDT'): the engine committee's agreement and dissent on the record, with a signed receipt and a public replay URL. Observation, not advice."""
         return json.dumps(execute_tool(client, "fahali_verdict", {"symbols": symbols.split(",")}))
 
     @tool("fahali_forecast_72h")

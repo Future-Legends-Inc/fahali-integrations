@@ -15,7 +15,7 @@ import urllib.request
 import urllib.error
 from typing import Any, Optional
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 DEFAULT_BASE_URL = "https://app.fahaliai.com"
 
 
@@ -51,11 +51,11 @@ class FahaliClient:
         return self._get(f"/api/forecast/72h?symbol={symbol}")
 
     def tape(self) -> Any:
-        """Latest judged calls market-wide — hits AND misses. Public."""
+        """Latest judged calls market-wide: hits AND misses. Public."""
         return self._get("/api/tape")
 
     def replay(self, signal_id: str) -> Any:
-        """Public replay of one judged signal — citable proof."""
+        """Public replay of one judged signal, citable proof."""
         return self._get(f"/api/replay/{signal_id}")
 
     def symbol_record(self, symbol: str) -> Any:
@@ -79,7 +79,7 @@ class FahaliClient:
 TOOL_SPECS: list[dict[str, Any]] = [
     {
         "name": "fahali_verdict",
-        "description": "Committee market verdict for symbols (e.g. BTCUSDT). 18 engines vote; includes agreement, dissent kept on the record, a signed SHA-256 receipt and a public replay URL. Observation, not advice.",
+        "description": "Committee market verdict for symbols (e.g. BTCUSDT): the engine committee's agreement and dissent kept on the record, with a signed SHA-256 receipt and a public replay URL. Observation, not advice.",
         "parameters": {"type": "object", "properties": {"symbols": {"type": "array", "items": {"type": "string"}}}, "required": ["symbols"]},
     },
     {
@@ -104,7 +104,7 @@ TOOL_SPECS: list[dict[str, Any]] = [
     },
     {
         "name": "fahali_recent_alerts",
-        "description": "Latest engine detections (volume anomalies, dark-pool proxy, regime flips, whale flows...) across ~600 instruments.",
+        "description": "Latest engine detections (volume anomalies, dark-pool proxy, regime flips, funding stress) across covered crypto and US equities.",
         "parameters": {"type": "object", "properties": {}},
     },
 ]
