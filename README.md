@@ -81,11 +81,13 @@ import { FahaliClient, toAiSdkTools, toLangchainTools } from "fahali";
 
 const fahali = new FahaliClient({ apiKey: process.env.FAHALI_API_KEY });
 
-// Vercel AI SDK
-const tools = toAiSdkTools(fahali);
+// Vercel AI SDK — pass the SDK primitives so the adapter stays version-agnostic
+import { jsonSchema, tool } from "ai";
+const tools = toAiSdkTools(fahali, { tool, jsonSchema });
 
 // LangChain JS
-const lcTools = toLangchainTools(fahali);
+import { DynamicStructuredTool } from "@langchain/core/tools";
+const lcTools = toLangchainTools(fahali, { DynamicStructuredTool });
 ```
 
 ## Examples
